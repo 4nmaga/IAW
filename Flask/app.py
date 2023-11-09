@@ -7,7 +7,7 @@ def main_page():
     if(request.method == "POST"):
         contraseña=request.form.get('contraseña')
         usuario=request.form.get('usuario')
-        pass
+        return "Estes es tu usuario: {} \nEsta es tu contraseña: {}" .format(usuario,contraseña)
    
     return render_template("index.html")    
     
